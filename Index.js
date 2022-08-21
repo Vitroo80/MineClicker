@@ -19,6 +19,7 @@ const buyNetheriteS=document.querySelector("#netheriteSword")
 const netheritePrice=document.querySelector("#netheritePrice")
 const netheriteinv=document.querySelector("#netheriteInv")
 
+
 let clicks = 0
 let woodSwordCost = 10
 let woodStock =0
@@ -35,10 +36,11 @@ let netheriteStock = 0
 
 
 
+
 function addCount(){
     clicks=clicks+1   
-    console.log(clicks)
     count.innerText=clicks
+    // console.log(clicks)
 }
 
 // Upgrades
@@ -51,7 +53,7 @@ function buyWood(){
     count.innerText=clicks-woodStock
     woodinv.innerText= woodStock
     woodPrice.innerText= woodSwordCost
-    console.log(woodStock)
+    // console.log(woodStock)
 
   }
 }
@@ -64,7 +66,7 @@ function buyStone(){
     count.innerText=clicks-stoneStock
     stoneinv.innerText= stoneStock
     stonePrice.innerText= stoneSwordCost
-    console.log(stoneStock)
+    // console.log(stoneStock)
 
 
   }
@@ -78,7 +80,7 @@ function buyIron(){
     count.innerText=clicks-woodStock
     ironinv.innerText= ironStock
     ironPrice.innerText= ironSwordCost
-    console.log(ironStock)
+    // console.log(ironStock)
 
   }
 }
@@ -91,7 +93,7 @@ function buyGold(){
     count.innerText=clicks-woodStock
     goldinv.innerText= goldStock
     goldPrice.innerText= goldSwordCost
-    console.log(goldStock)
+    // console.log(goldStock)
 
   }
 }
@@ -104,7 +106,7 @@ function buyDiamond(){
     count.innerText=clicks-woodStock
     diamondinv.innerText= diamondStock
     diamondPrice.innerText= diamondSwordCost
-    console.log(diamondStock)
+    // console.log(diamondStock)
 
   }
 }
@@ -117,10 +119,12 @@ function buyNetherite(){
     count.innerText=clicks-woodStock
     netheriteinv.innerText= netheriteStock
     netheritePrice.innerText= netheriteSwordCost
-    console.log(netheriteStock)
+    // console.log(netheriteStock)
 
   }
 }
+
+
 
 setInterval (function(){
   clicks = clicks+woodStock

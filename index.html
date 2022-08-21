@@ -13,15 +13,17 @@
     
 </head>
 <body>
-    
-    <center>
+    <div id="body">
+    <div class="layout">
         <div><img id="zombie" src="./Images/Blaze.png" alt="zombie"/></div> 
-        <div id="diamonds_count"><p><img id="diamondimg" src="./Images/Diamond.png"/>Diamonds:<span id="count">0</span></p></div>
-    </center>
+        <div id="countDisplay"><div><img id="diamondimg" src="./Images/Diamond.png"/></div>
+        <div id="diamonds_count"><p>Diamonds:<span id="count">0</span></p></div></div>
+        <div><p>D.P.S: <span id="dpscount">0</span></p></div>
+    </div>
     
     
 <!-- ------------------ Swords  -------------------->
-    <center><div class="layout">
+    <div id="swords1" class="layout">
         <div>
         <button onclick="buyWood()" class="swords" id="wooden_Sword"><img id="woodimg" src="./Images/Wooden_Sword.png" alt="Wooden_Sword"><p>Wooden Sword</p></button>
             <p><span>Price:</span><span id="woodPrice">10</span></p>
@@ -37,6 +39,8 @@
             <p><span>Price:</span><span id="ironPrice">1000</span></p>
             <span>Inventory:</span><span id="ironInv" class="swordInfo">0</span>
         </div>
+         </div>
+         <div id="swords2">
         <div>
             <button onclick="buyGold()" class="swords" id="gold_Sword"><img id="goldimg" src="./Images/Golden_Sword.png" alt="Golden_Sword"><p>Golden Sword</p></button>
             <p><span>Price:</span><span id="goldPrice">10000</span></p>
@@ -52,8 +56,8 @@
             <p><span>Price:</span><span id="netheritePrice">10000000</span></p>
             <span>Inventory:</span><span id="netheriteInv" class="swordInfo">0</span>
         </div>
-    </div></center>
-
+    </div>
+</div>
 
 
     <script src="Index.js"></script>
