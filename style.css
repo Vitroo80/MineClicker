@@ -1,0 +1,63 @@
+.enemy {
+    margin: 5%;
+    padding-left: 50px;
+}
+
+p{
+    font-family: 'Minecraft', sans-serif;
+                                                
+}
+
+#diamonds_count{
+    font-size: 25px;
+    
+}
+
+#diamondimg{
+    width: 25px;
+    padding-right: 10px;
+}
+
+#zombie{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+}
+
+/*-------- Sword Buttons --------*/
+
+.swords{
+    width: 250px;
+    margin-left: 75%;
+    font-size: 20px;
+    
+    
+}
+
+#woodimg{
+    width: 50px;
+    padding-top: 25px;
+}
+
+#stoneimg{
+    width: 50px;
+    padding-top: 25px;
+}
+
+#ironimg{
+    width: 50px;
+    padding-top: 25px;
+}
+
+
+#goldimg{
+    width: 50px;
+    padding-top: 25px;
+}
+
+
+#sdiamondimg{
+    width: 50px;
+    padding-top: 25px;
+}
+
