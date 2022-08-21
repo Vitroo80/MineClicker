@@ -41,7 +41,10 @@ body{
 .swords{
     width: 250px;
     font-size: 20px;
-    
+    border-radius: 10px;
+    border-color: rgb(112, 59, 9);
+    background-color: rgb(221, 231, 160);
+    margin-top: 10px;
     
 }
 

@@ -19,13 +19,13 @@ const diamondinv=document.querySelector("#diamondInv")
 let clicks = 0
 let woodSwordCost = 10
 let woodStock =0
-let stoneSwordCost = 1000
+let stoneSwordCost = 100
 let stoneStock = 0
-let ironSwordCost = 100000
+let ironSwordCost = 1000
 let ironStock = 0
-let goldSwordCost = 1000000
+let goldSwordCost = 10000
 let goldStock = 0
-let diamondSwordCost = 10000000
+let diamondSwordCost = 100000
 let diamondStock = 0
 
 
@@ -110,22 +110,22 @@ setInterval (function(){
 },1000)
 
 setInterval (function(){
-  clicks = clicks+stoneStock*100
+  clicks = clicks+stoneStock*10
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+ironStock*1000
+  clicks = clicks+ironStock*100
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+goldStock*10000
+  clicks = clicks+goldStock*1000
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+diamondStock*100000
+  clicks = clicks+diamondStock*10000
   count.innerText=clicks
 },1000)
 
