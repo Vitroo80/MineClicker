@@ -15,6 +15,9 @@ const goldinv=document.querySelector("#goldInv")
 const buyDiamondS=document.querySelector("#diamond_Sword")
 const diamondPrice=document.querySelector("#diamondPrice")
 const diamondinv=document.querySelector("#diamondInv")
+const buyNetherite=document.querySelector("#netheriteSword")
+const netheritePrice=document.querySelector("#netheritePrice")
+const netheriteinv=document.querySelector("#netheriteInv")
 
 let clicks = 0
 let woodSwordCost = 10
@@ -27,6 +30,8 @@ let goldSwordCost = 10000
 let goldStock = 0
 let diamondSwordCost = 100000
 let diamondStock = 0
+let netheriteSwordCost = 1000000
+let netheriteStock = 0
 
 
 
@@ -104,6 +109,19 @@ function buyDiamond(){
   }
 }
 
+function buyNetherite(){
+  if(clicks >= netheriteSwordCost){
+    clicks = clicks - netheriteSwordCost
+    netheriteStock = netheriteStock+1
+    netheriteSwordCost = Math.round(netheriteSwordCost*1.15)
+    count.innerText=clicks-woodStock
+    netheriteinv.innerText= netheriteStock
+    netheritePrice.innerText= netheriteSwordCost
+    console.log(netheriteStock)
+
+  }
+}
+
 setInterval (function(){
   clicks = clicks+woodStock
   count.innerText=clicks
@@ -126,6 +144,11 @@ setInterval (function(){
 
 setInterval (function(){
   clicks = clicks+diamondStock*10000
+  count.innerText=clicks
+},1000)
+
+setInterval (function(){
+  clicks = clicks+netheriteStock*100000
   count.innerText=clicks
 },1000)
 
