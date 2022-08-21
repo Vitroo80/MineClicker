@@ -14,16 +14,40 @@
 </head>
 <body>
     
-       <center><div><img id="zombie" src="./Images/Zombie.png" alt="zombie"/></div></center> 
-    <center><div id="diamonds_count"><p><img id="diamondimg" src="./Images/Diamond.png"/>Diamonds:<span id="count">0</span></p></div></center>
+    <center>
+        <div><img id="zombie" src="./Images/Zombie.png" alt="zombie"/></div> 
+        <div id="diamonds_count"><p><img id="diamondimg" src="./Images/Diamond.png"/>Diamonds:<span id="count">0</span></p></div>
+    </center>
     
     
 <!-- ------------------ Swords  -------------------->
-    <div><button onclick="buyWood()" class="swords" id="wooden_Sword"><img id="woodimg" src="./Images/Wooden_Sword.png" alt="Wooden_Sword"><p>Wooden Sword</p></button></div>
-    <div><button onclick="buyStone()" class="swords" id="stone_Sword"><img id="stoneimg" src="./Images/Stone_Sword.png" alt="Wooden_Sword"><p>Stone Sword</p></button></div>
-    <div><button onclick="buyIron()" class="swords" id="iron_Sword"><img id="ironimg" src="./Images/Iron_Sword.png" alt="Wooden_Sword"><p>Iron Sword</p></button></div>
-    <div><button onclick="buyGold()" class="swords" id="gold_Sword"><img id="goldimg" src="./Images/Golden_Sword.png" alt="Wooden_Sword"><p>Golden Sword</p></button></div>
-    <div><button onclick="buyDiamond()" class="swords" id="diamond_Sword"><img id="sdiamondimg" src="./Images/Diamond_Sword.png" alt="Wooden_Sword"><p>Diamond Sword</p></button></div>
+    <center><div class="layout">
+        <div>
+        <button onclick="buyWood()" class="swords" id="wooden_Sword"><img id="woodimg" src="./Images/Wooden_Sword.png" alt="Wooden_Sword"><p>Wooden Sword</p></button>
+            <p><span>Price:</span><span id="woodPrice">0</span></p>
+            <span>Inventory:</span><span id="woodInv" class="swordInfo">0</span>
+        </div>
+        <div>
+            <button onclick="buyStone()" class="swords" id="stone_Sword"><img id="stoneimg" src="./Images/Stone_Sword.png" alt="Wooden_Sword"><p>Stone Sword</p></button>
+            <p><span>Price:</span><span id="stonePrice">0</span></p>
+            <span>Inventory:</span><span id="stoneInv" class="swordInfo">0</span>
+        </div>
+        <div>
+            <button onclick="buyIron()" class="swords" id="iron_Sword"><img id="ironimg" src="./Images/Iron_Sword.png" alt="Wooden_Sword"><p>Iron Sword</p></button>
+            <p><span>Price:</span><span id="ironPrice">0</span></p>
+            <span>Inventory:</span><span id="ironInv" class="swordInfo">0</span>
+        </div>
+        <div>
+            <button onclick="buyGold()" class="swords" id="gold_Sword"><img id="goldimg" src="./Images/Golden_Sword.png" alt="Wooden_Sword"><p>Golden Sword</p></button>
+            <p><span>Price:</span><span id="goldPrice">0</span></p>
+            <span>Inventory:</span><span id="goldInv" class="swordInfo">0</span>
+        </div>
+        <div>
+            <button onclick="buyDiamond()" class="swords" id="diamond_Sword"><img id="sdiamondimg" src="./Images/Diamond_Sword.png" alt="Wooden_Sword"><p>Diamond Sword</p></button>
+            <p><span>Price:</span><span id="dianondPrice">0</span></p>
+            <span>Inventory:</span><span id="diamondInv" class="swordInfo">0</span>
+        </div>
+    </div></center>
 
 
 

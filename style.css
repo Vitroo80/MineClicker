@@ -1,12 +1,24 @@
-.enemy {
-    margin: 5%;
-    padding-left: 50px;
+p{
+    font-family: 'Minecraft', sans-serif;                                               
 }
 
-p{
+span{
     font-family: 'Minecraft', sans-serif;
-                                                
 }
+
+.enemy {
+    margin: 5%;
+    ;
+}
+
+
+
+
+body{
+    background-color: rgb(154, 201, 139);
+}
+
+
 
 #diamonds_count{
     font-size: 25px;
@@ -28,7 +40,6 @@ p{
 
 .swords{
     width: 250px;
-    margin-left: 75%;
     font-size: 20px;
     
     
