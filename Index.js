@@ -104,9 +104,41 @@ function buyDiamond(){
   }
 }
 
+setInterval (function(){
+  clicks = clicks+woodStock
+  count.innerText=clicks
+},1000)
+
+setInterval (function(){
+  clicks = clicks+stoneStock*100
+  count.innerText=clicks
+},1000)
+
+setInterval (function(){
+  clicks = clicks+ironStock*1000
+  count.innerText=clicks
+},1000)
+
+setInterval (function(){
+  clicks = clicks+goldStock*10000
+  count.innerText=clicks
+},1000)
+
+setInterval (function(){
+  clicks = clicks+diamondStock*100000
+  count.innerText=clicks
+},1000)
+
+
+
 img.addEventListener("click",()=> addCount())
 buyWoodS.addEventListener("click",()=> buyWood())
 buyStoneS.addEventListener("click",()=> buyStone())
 buyIronS.addEventListener("click",()=> buyIron())
 buyGoldS.addEventListener("click",()=> buyGold())
 buyDiamondS.addEventListener("click",()=> buyDiamond())
+
+
+
+//click  upgrades dps do mvp
+// setInterval (function(){clicks = clicks+woodStock*5},1000) 
