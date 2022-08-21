@@ -15,7 +15,7 @@ const goldinv=document.querySelector("#goldInv")
 const buyDiamondS=document.querySelector("#diamond_Sword")
 const diamondPrice=document.querySelector("#diamondPrice")
 const diamondinv=document.querySelector("#diamondInv")
-const buyNetherite=document.querySelector("#netheriteSword")
+const buyNetheriteS=document.querySelector("#netheriteSword")
 const netheritePrice=document.querySelector("#netheritePrice")
 const netheriteinv=document.querySelector("#netheriteInv")
 
@@ -30,7 +30,7 @@ let goldSwordCost = 10000
 let goldStock = 0
 let diamondSwordCost = 100000
 let diamondStock = 0
-let netheriteSwordCost = 1000000
+let netheriteSwordCost = 10000000
 let netheriteStock = 0
 
 
@@ -160,6 +160,7 @@ buyStoneS.addEventListener("click",()=> buyStone())
 buyIronS.addEventListener("click",()=> buyIron())
 buyGoldS.addEventListener("click",()=> buyGold())
 buyDiamondS.addEventListener("click",()=> buyDiamond())
+buyNetheriteS.addEventListener("click",()=> buyNetherite())
 
 
 
