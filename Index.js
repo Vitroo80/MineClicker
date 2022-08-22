@@ -18,6 +18,9 @@ const diamondinv=document.querySelector("#diamondInv")
 const buyNetheriteS=document.querySelector("#netheriteSword")
 const netheritePrice=document.querySelector("#netheritePrice")
 const netheriteinv=document.querySelector("#netheriteInv")
+const woodCursorinv=document.querySelector("#woodCursorInv")
+const woodCursorPrice=document.querySelector("#woodCursorPrice")
+
 
 
 let clicks = 0
@@ -33,6 +36,8 @@ let diamondSwordCost = 100000
 let diamondStock = 0
 let netheriteSwordCost = 10000000
 let netheriteStock = 0
+let woodCursorCost = 150
+let woodCursorStock =0
 
 
 
@@ -43,7 +48,7 @@ function addCount(){
     // console.log(clicks)
 }
 
-// Upgrades
+// Swords
 
 function buyWood(){
   if(clicks >= woodSwordCost){
@@ -116,7 +121,7 @@ function buyNetherite(){
     clicks = clicks - netheriteSwordCost
     netheriteStock = netheriteStock+1
     netheriteSwordCost = Math.round(netheriteSwordCost*1.15)
-    count.innerText=clicks-woodStock
+    count.innerText=clicks-netheriteStock
     netheriteinv.innerText= netheriteStock
     netheritePrice.innerText= netheriteSwordCost
     // console.log(netheriteStock)
@@ -124,7 +129,22 @@ function buyNetherite(){
   }
 }
 
+// Cursor Upgrade
 
+function buyWoodCursor(){
+  if(clicks >= woodCursorCost){
+    clicks = clicks - woodCursorCost
+    woodCursorStock = woodCursorStock+1
+    woodCursorCost = Math.round(woodCursorCost*1.15)
+    count.innerText=clicks-woodCursorStock
+    woodCursorinv.innerText= woodCursorStock
+    woodCursorPrice.innerText= woodCursorPrice
+    console.log(woodCursorStock)
+
+  }
+}
+
+// Inventory
 
 setInterval (function(){
   clicks = clicks+woodStock
@@ -165,6 +185,7 @@ buyIronS.addEventListener("click",()=> buyIron())
 buyGoldS.addEventListener("click",()=> buyGold())
 buyDiamondS.addEventListener("click",()=> buyDiamond())
 buyNetheriteS.addEventListener("click",()=> buyNetherite())
+
 
 
 

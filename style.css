@@ -35,7 +35,7 @@ span{
    }
 
 body{
-    background-color: rgb(154, 201, 139);
+    background-color: rgb(165, 207, 130);
 }
 
 
@@ -82,33 +82,75 @@ body{
 }
 
 #woodimg{
-    width: 50px;
+    width: 100px;
     padding-top: 25px;
 }
 
 #stoneimg{
-    width: 50px;
+    width: 100px;
     padding-top: 25px;
 }
 
 #ironimg{
-    width: 50px;
+    width: 100px;
     padding-top: 25px;
 }
 
 
 #goldimg{
-    width: 50px;
+    width: 100px;
     padding-top: 25px;
 }
 
 
 #sdiamondimg{
-    width: 50px;
+    width: 100px;
     padding-top: 25px;
 }
 
 #netheriteimg{
-    width: 50px;
+    width: 100px;
     padding-top: 25px;
+}
+
+/* Cursor Upgrades */
+
+#wood_Cursor{
+    width: 75px;  
+}
+
+#stone_Cursor{
+    width: 75px;  
+}
+
+#iron_Cursor{
+    width: 75px;  
+}
+
+#gold_Cursor{
+    width: 75px;  
+}
+
+#diamond_Cursor{
+    width: 75px;  
+}
+
+#netherite_Cursor{
+    width: 75px;  
+}
+
+.cursor{
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(112, 59, 9);
+    background-color: rgb(221, 231, 160);
+    margin-top: 10px;
+    padding-top: 25px;
+    display: flex;
+}
+
+#cursorButtons{
+    display: flex;
+    justify-content: space-between;
 }
