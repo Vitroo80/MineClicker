@@ -18,6 +18,7 @@ const diamondinv=document.querySelector("#diamondInv")
 const buyNetheriteS=document.querySelector("#netheriteSword")
 const netheritePrice=document.querySelector("#netheritePrice")
 const netheriteinv=document.querySelector("#netheriteInv")
+const buyWoodC=document.querySelector("#woodCursor")
 const woodCursorinv=document.querySelector("#woodCursorInv")
 const woodCursorPrice=document.querySelector("#woodCursorPrice")
 
@@ -43,7 +44,10 @@ let woodCursorStock =0
 
 
 function addCount(){
-    clicks=clicks+1   
+    clicks=clicks+1  
+    if(woodCursorStock>0){
+      clicks=clicks+woodCursorStock*5
+    } 
     count.innerText=clicks
     // console.log(clicks)
 }
@@ -135,14 +139,15 @@ function buyWoodCursor(){
   if(clicks >= woodCursorCost){
     clicks = clicks - woodCursorCost
     woodCursorStock = woodCursorStock+1
-    woodCursorCost = Math.round(woodCursorCost*1.15)
+    woodCursorCost = Math.round(woodCursorCost*1.5)
     count.innerText=clicks-woodCursorStock
     woodCursorinv.innerText= woodCursorStock
-    woodCursorPrice.innerText= woodCursorPrice
+    woodCursorPrice.innerText= woodCursorCost
     console.log(woodCursorStock)
 
   }
 }
+
 
 // Inventory
 
@@ -178,6 +183,8 @@ setInterval (function(){
 
 
 
+
+
 img.addEventListener("click",()=> addCount())
 buyWoodS.addEventListener("click",()=> buyWood())
 buyStoneS.addEventListener("click",()=> buyStone())
@@ -185,6 +192,8 @@ buyIronS.addEventListener("click",()=> buyIron())
 buyGoldS.addEventListener("click",()=> buyGold())
 buyDiamondS.addEventListener("click",()=> buyDiamond())
 buyNetheriteS.addEventListener("click",()=> buyNetherite())
+buyWoodC.addEventListener("click",()=>buyWoodC())
+
 
 
 

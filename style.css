@@ -14,8 +14,7 @@ span{
 .layout{
     display: flex;
     flex-direction: column;
-    
-    
+      
 }
 
 #body{
@@ -25,13 +24,17 @@ span{
 
 #swords1{
  margin: 50px;
- padding-left: 500px;
- padding-top: 180px;
+ padding-left: 25% ;
+ padding-top: 2%;
+ display: flex;
+ 
 }
 
 #swords2{
     margin: 50px;
-    padding-top: 180px;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
    }
 
 body{
@@ -152,5 +155,5 @@ body{
 
 #cursorButtons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
