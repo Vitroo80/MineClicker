@@ -15,7 +15,7 @@ const goldinv=document.querySelector("#goldInv")
 const buyDiamondS=document.querySelector("#diamond_Sword")
 const diamondPrice=document.querySelector("#diamondPrice")
 const diamondinv=document.querySelector("#diamondInv")
-const buyNetheriteS=document.querySelector("#netheriteSword")
+const buyNetheriteS=document.querySelector("#netherite_Sword")
 const netheritePrice=document.querySelector("#netheritePrice")
 const netheriteinv=document.querySelector("#netheriteInv")
 const buyWoodC=document.querySelector("#woodCursor")
@@ -36,12 +36,12 @@ const diamondCursorPrice=document.querySelector("#diamondCursorPrice")
 const buynetheriteC=document.querySelector("#netheriteCursor")
 const netheriteCursorinv=document.querySelector("#netheriteCursorInv")
 const netheriteCursorPrice=document.querySelector("#netheriteCursorPrice")
-
+const dpscounter=document.querySelector("#dpscount")
 
 
 let clicks = 0
 let woodSwordCost = 10
-let woodStock =0
+let woodStock = 0
 let stoneSwordCost = 100
 let stoneStock = 0
 let ironSwordCost = 1000
@@ -56,17 +56,20 @@ let woodCursorCost = 150
 let woodCursorStock = 0
 let stoneCursorCost = 1500
 let stoneCursorStock = 0
-let ironCursorCost = 15000
+let ironCursorCost = 150000
 let ironCursorStock = 0
-let goldCursorCost = 150000
+let goldCursorCost = 1500000
 let goldCursorStock = 0
-let diamondCursorCost = 1500000
+let diamondCursorCost = 15000000
 let diamondCursorStock = 0
-let netheriteCursorCost = 15000000
+let netheriteCursorCost = 150000000
 let netheriteCursorStock = 0
+let dps =0
 
-
-
+// function dpscount(){
+//   dps = woodStock+stoneStock*10+ironStock*100+goldStock*1000+diamondStock+10000+netheriteStock*100000
+//   console.log(dps)
+// }
 
 function addCount(){
     clicks=clicks+1  
@@ -83,10 +86,10 @@ function addCount(){
       clicks=clicks+goldCursorStock*5000
     }
     if(diamondCursorStock>0){
-      clicks=clicks+diamondCursorStock*50
+      clicks=clicks+diamondCursorStock*50000
     }
     if(netheriteCursorStock>0){
-      clicks=clicks+netheriteCursorStock*50
+      clicks=clicks+netheriteCursorStock*500000
     }
     count.innerText=clicks
     // console.log(clicks)
@@ -97,8 +100,11 @@ function addCount(){
 function buyWood(){
   if(clicks >= woodSwordCost){
     clicks = clicks - woodSwordCost
-    woodStock = woodStock+1
+    woodStock += 1
+    dps=dps+10
     woodSwordCost = Math.round(woodSwordCost*1.15)
+    dpscounter.innerText=dps
+    console.log(dps)
     count.innerText=clicks-woodStock
     woodinv.innerText= woodStock
     woodPrice.innerText= woodSwordCost
@@ -115,6 +121,8 @@ function buyStone(){
     count.innerText=clicks-stoneStock
     stoneinv.innerText= stoneStock
     stonePrice.innerText= stoneSwordCost
+    dps=dps+100
+    dpscounter.innerText=dps
     // console.log(stoneStock)
 
 
@@ -129,6 +137,8 @@ function buyIron(){
     count.innerText=clicks-woodStock
     ironinv.innerText= ironStock
     ironPrice.innerText= ironSwordCost
+    dps=dps+1000
+    dpscounter.innerText=dps
     // console.log(ironStock)
 
   }
@@ -142,6 +152,8 @@ function buyGold(){
     count.innerText=clicks-woodStock
     goldinv.innerText= goldStock
     goldPrice.innerText= goldSwordCost
+    dps=dps+10000
+    dpscounter.innerText=dps
     // console.log(goldStock)
 
   }
@@ -155,6 +167,8 @@ function buyDiamond(){
     count.innerText=clicks-woodStock
     diamondinv.innerText= diamondStock
     diamondPrice.innerText= diamondSwordCost
+    dps=dps+100000
+    dpscounter.innerText=dps
     // console.log(diamondStock)
 
   }
@@ -168,6 +182,8 @@ function buyNetherite(){
     count.innerText=clicks-netheriteStock
     netheriteinv.innerText= netheriteStock
     netheritePrice.innerText= netheriteSwordCost
+    dps=dps+1000000
+    dpscounter.innerText=dps
     // console.log(netheriteStock)
 
   }
@@ -179,7 +195,7 @@ function buyWoodCursor(){
   if(clicks >= woodCursorCost){
     clicks = clicks - woodCursorCost
     woodCursorStock = woodCursorStock+1
-    woodCursorCost = Math.round(woodCursorCost*1.5)
+    woodCursorCost = Math.round(woodCursorCost*3)
     count.innerText=clicks-woodCursorStock
     woodCursorinv.innerText= woodCursorStock
     woodCursorPrice.innerText= woodCursorCost
@@ -192,7 +208,7 @@ function buyStoneCursor(){
   if(clicks >= stoneCursorCost){
     clicks = clicks - stoneCursorCost
     stoneCursorStock = stoneCursorStock+1
-    stoneCursorCost = Math.round(stoneCursorCost*1.5)
+    stoneCursorCost = Math.round(stoneCursorCost*3)
     count.innerText=clicks-stoneCursorStock
     stoneCursorinv.innerText= stoneCursorStock
     stoneCursorPrice.innerText= stoneCursorCost
@@ -205,7 +221,7 @@ function buyIronCursor(){
   if(clicks >= ironCursorCost){
     clicks = clicks - ironCursorCost
     ironCursorStock = ironCursorStock+1
-    ironCursorCost = Math.round(ironCursorCost*1.5)
+    ironCursorCost = Math.round(ironCursorCost*3)
     count.innerText=clicks-ironCursorStock
     ironCursorinv.innerText= ironCursorStock
     ironCursorPrice.innerText= ironCursorCost
@@ -218,7 +234,7 @@ function buyGoldCursor(){
   if(clicks >= goldCursorCost){
     clicks = clicks - goldCursorCost
     goldCursorStock = goldCursorStock+1
-    goldCursorCost = Math.round(goldCursorCost*1.5)
+    goldCursorCost = Math.round(goldCursorCost*3)
     count.innerText=clicks-goldCursorStock
     goldCursorinv.innerText= goldCursorStock
     goldCursorPrice.innerText= goldCursorCost
@@ -231,7 +247,7 @@ function buyDiamondCursor(){
   if(clicks >= diamondCursorCost){
     clicks = clicks - diamondCursorCost
     diamondCursorStock = diamondCursorStock+1
-    diamondCursorCost = Math.round(diamondCursorCost*1.5)
+    diamondCursorCost = Math.round(diamondCursorCost*3)
     count.innerText=clicks-diamondCursorStock
     diamondCursorinv.innerText= diamondCursorStock
     diamondCursorPrice.innerText= diamondCursorCost
@@ -244,7 +260,7 @@ function buyNetheriteCursor(){
   if(clicks >= netheriteCursorCost){
     clicks = clicks - netheriteCursorCost
     netheriteCursorStock = netheriteCursorStock+1
-    netheriteCursorCost = Math.round(netheriteCursorCost*1.5)
+    netheriteCursorCost = Math.round(netheriteCursorCost*3)
     count.innerText=clicks-netheriteCursorStock
     netheriteCursorinv.innerText= netheriteCursorStock
     netheriteCursorPrice.innerText= netheriteCursorCost
@@ -256,32 +272,32 @@ function buyNetheriteCursor(){
 // Inventory
 
 setInterval (function(){
-  clicks = clicks+woodStock
+  clicks = clicks+woodStock*10
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+stoneStock*10
+  clicks = clicks+stoneStock*100
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+ironStock*100
+  clicks = clicks+ironStock*1000
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+goldStock*1000
+  clicks = clicks+goldStock*10000
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+diamondStock*10000
+  clicks = clicks+diamondStock*100000
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+netheriteStock*100000
+  clicks = clicks+netheriteStock*1000000
   count.innerText=clicks
 },1000)
 
