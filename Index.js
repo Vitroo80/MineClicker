@@ -39,34 +39,35 @@ const netheriteCursorPrice=document.querySelector("#netheriteCursorPrice")
 const dpscounter=document.querySelector("#dpscount")
 const stage=document.querySelector("#boss")
 
+
 let clicks = 0
-let woodSwordCost = 10
+let woodSwordCost = 50
 let woodStock = 0
-let stoneSwordCost = 100
+let stoneSwordCost = 200
 let stoneStock = 0
-let ironSwordCost = 1000
+let ironSwordCost = 600
 let ironStock = 0
-let goldSwordCost = 10000
+let goldSwordCost = 1500
 let goldStock = 0
-let diamondSwordCost = 100000
+let diamondSwordCost = 2500
 let diamondStock = 0
-let netheriteSwordCost = 10000000
+let netheriteSwordCost = 20000
 let netheriteStock = 0
 let woodCursorCost = 150
 let woodCursorStock = 0
-let stoneCursorCost = 1500
+let stoneCursorCost = 400
 let stoneCursorStock = 0
-let ironCursorCost = 150000
+let ironCursorCost = 700
 let ironCursorStock = 0
-let goldCursorCost = 1500000
+let goldCursorCost = 1300
 let goldCursorStock = 0
-let diamondCursorCost = 15000000
+let diamondCursorCost = 2750
 let diamondCursorStock = 0
-let netheriteCursorCost = 150000000
+let netheriteCursorCost = 9500
 let netheriteCursorStock = 0
 let dps = 0
 let image = document.querySelector("#zombie") 
-let nivel=1
+let nivel = 1
 let era = 1
 // let dpcursor = 1*woodCursorStock+stoneCursorStock*5+ironCursorStock*10+goldCursorStock*50+diamondCursorStock*500+netheriteCursorStock*5000
 
@@ -74,22 +75,22 @@ let era = 1
 function addCount(){
     clicks=clicks+1  
     if(woodCursorStock>0){
-      clicks=clicks+woodCursorStock*5
+      clicks=clicks+woodCursorStock*3
     } 
     if(stoneCursorStock>0){
-      clicks=clicks+stoneCursorStock*50
+      clicks=clicks+stoneCursorStock*10
     }
     if(ironCursorStock>0){
-      clicks=clicks+ironCursorStock*500
+      clicks=clicks+ironCursorStock*20
     }
     if(goldCursorStock>0){
-      clicks=clicks+goldCursorStock*5000
+      clicks=clicks+goldCursorStock*50
     }
     if(diamondCursorStock>0){
-      clicks=clicks+diamondCursorStock*50000
+      clicks=clicks+diamondCursorStock*125
     }
     if(netheriteCursorStock>0){
-      clicks=clicks+netheriteCursorStock*500000
+      clicks=clicks+netheriteCursorStock*500
     }
     count.innerText=clicks
     // console.log(clicks)
@@ -101,7 +102,7 @@ function buyWood(){
   if(clicks >= woodSwordCost){
     clicks = clicks - woodSwordCost
     woodStock += 1
-    dps=dps+10
+    dps=dps+1
     woodSwordCost = Math.round(woodSwordCost*1.15)
     dpscounter.innerText=dps
     console.log(dps)
@@ -121,7 +122,7 @@ function buyStone(){
     count.innerText=clicks-stoneStock
     stoneinv.innerText= stoneStock
     stonePrice.innerText= stoneSwordCost
-    dps=dps+100
+    dps=dps+5
     dpscounter.innerText=dps
     // console.log(stoneStock)
 
@@ -137,7 +138,7 @@ function buyIron(){
     count.innerText=clicks-woodStock
     ironinv.innerText= ironStock
     ironPrice.innerText= ironSwordCost
-    dps=dps+1000
+    dps=dps+20
     dpscounter.innerText=dps
     // console.log(ironStock)
 
@@ -152,7 +153,7 @@ function buyGold(){
     count.innerText=clicks-woodStock
     goldinv.innerText= goldStock
     goldPrice.innerText= goldSwordCost
-    dps=dps+10000
+    dps=dps+50
     dpscounter.innerText=dps
     // console.log(goldStock)
 
@@ -167,7 +168,7 @@ function buyDiamond(){
     count.innerText=clicks-woodStock
     diamondinv.innerText= diamondStock
     diamondPrice.innerText= diamondSwordCost
-    dps=dps+100000
+    dps=dps+100
     dpscounter.innerText=dps
     // console.log(diamondStock)
 
@@ -182,7 +183,7 @@ function buyNetherite(){
     count.innerText=clicks-netheriteStock
     netheriteinv.innerText= netheriteStock
     netheritePrice.innerText= netheriteSwordCost
-    dps=dps+1000000
+    dps=dps+1000
     dpscounter.innerText=dps
     // console.log(netheriteStock)
 
@@ -272,32 +273,32 @@ function buyNetheriteCursor(){
 // Inventory
 
 setInterval (function(){
-  clicks = clicks+woodStock*10
+  clicks = clicks+woodStock*1
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+stoneStock*100
+  clicks = clicks+stoneStock*5
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+ironStock*1000
+  clicks = clicks+ironStock*20
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+goldStock*10000
+  clicks = clicks+goldStock*50
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+diamondStock*100000
+  clicks = clicks+diamondStock*100
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+netheriteStock*1000000
+  clicks = clicks+netheriteStock*1000
   count.innerText=clicks
 },1000)
 
@@ -562,10 +563,3 @@ buyGoldS.addEventListener("click",()=> buyGold())
 buyDiamondS.addEventListener("click",()=> buyDiamond())
 buyNetheriteS.addEventListener("click",()=> buyNetherite())
 
-
-
-
-
-
-//click  upgrades dps do mvp
-// setInterval (function(){clicks = clicks+woodStock*5},1000) 
