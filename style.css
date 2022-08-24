@@ -1,9 +1,11 @@
 p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif                                              
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(104, 18, 2);                                              
 }
 
 span{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(2, 56, 31);
 }
 
 .enemy {
@@ -73,7 +75,13 @@ body{
     
 }
 
+#dpscount{
+    color: rgb(5, 133, 15);
+}
 
+#count{
+    color: rgb(5, 133, 15);
+}
 
 #diamonds_count{
     font-size: 50px;
@@ -95,7 +103,9 @@ body{
     padding-top: 88px;
 }
 
-
+.pricetext{
+    color: rgb(104, 18, 2);
+}
 
 #zombie{
     margin-top: 100px;

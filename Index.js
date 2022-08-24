@@ -53,7 +53,7 @@ let diamondSwordCost = 2500
 let diamondStock = 0
 let netheriteSwordCost = 20000
 let netheriteStock = 0
-let woodCursorCost = 20
+let woodCursorCost = 4000
 let woodCursorStock = 0
 let stoneCursorCost = 10000
 let stoneCursorStock = 0
@@ -75,29 +75,38 @@ let dpcursor=0
   // contador de diamante
 function addCount(){
     clicks=clicks+1  
-    if(woodCursorStock>0){
-      clicks=clicks+woodCursorStock
+    // if(woodCursorStock>0){
+    //   clicks=clicks+woodCursorStock
 
-    } 
-    if(stoneCursorStock>0){
-      clicks=clicks+stoneCursorStock*3
-    }
-    if(ironCursorStock>0){
-      clicks=clicks+ironCursorStock*8
-    }
-    if(goldCursorStock>0){
-      clicks=clicks+goldCursorStock*12
-    }
-    if(diamondCursorStock>0){
-      clicks=clicks+diamondCursorStock*23
-    }
-    if(netheriteCursorStock>0){
-      clicks=clicks+netheriteCursorStock*35
-    }
+    // } 
+    // if(stoneCursorStock>0){
+    //   clicks=clicks+stoneCursorStock*3
+    // }
+    // if(ironCursorStock>0){
+    //   clicks=clicks+ironCursorStock*8
+    // }
+    // if(goldCursorStock>0){
+    //   clicks=clicks+goldCursorStock*12
+    // }
+    // if(diamondCursorStock>0){
+    //   clicks=clicks+diamondCursorStock*23
+    // }
+    // if(netheriteCursorStock>0){
+    //   clicks=clicks+netheriteCursorStock*35
+    // }
     count.innerText=clicks
-    damage.innerText=dpcursor
+    
     // console.log(clicks)
 }
+
+function tuaMae(){
+  if(woodCursorStock>0){
+    damage.innerText=dpcursor
+    dpcursor=woodCursorStock
+
+  }
+}
+
 
 // Swords
 
@@ -125,7 +134,7 @@ function buyStone(){
     count.innerText=clicks-stoneStock
     stoneinv.innerText= stoneStock
     stonePrice.innerText= stoneSwordCost
-    dps=dps+5
+    dps=dps+2
     dpscounter.innerText=dps
     // console.log(stoneStock)
 
@@ -141,7 +150,7 @@ function buyIron(){
     count.innerText=clicks-woodStock
     ironinv.innerText= ironStock
     ironPrice.innerText= ironSwordCost
-    dps=dps+20
+    dps=dps+4
     dpscounter.innerText=dps
     // console.log(ironStock)
 
@@ -156,7 +165,7 @@ function buyGold(){
     count.innerText=clicks-woodStock
     goldinv.innerText= goldStock
     goldPrice.innerText= goldSwordCost
-    dps=dps+50
+    dps=dps+12
     dpscounter.innerText=dps
     // console.log(goldStock)
 
@@ -171,7 +180,7 @@ function buyDiamond(){
     count.innerText=clicks-woodStock
     diamondinv.innerText= diamondStock
     diamondPrice.innerText= diamondSwordCost
-    dps=dps+100
+    dps=dps+20
     dpscounter.innerText=dps
     // console.log(diamondStock)
 
@@ -186,7 +195,7 @@ function buyNetherite(){
     count.innerText=clicks-netheriteStock
     netheriteinv.innerText= netheriteStock
     netheritePrice.innerText= netheriteSwordCost
-    dps=dps+1000
+    dps=dps+100
     dpscounter.innerText=dps
     // console.log(netheriteStock)
 
