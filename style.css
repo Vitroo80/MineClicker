@@ -52,10 +52,11 @@ progress::-webkit-progress-value {
 
 #swords1{
  margin: 50px;
- padding-left: 25% ;
+ padding-left: 10% ;
  padding-top: 2%;
  display: flex;
- 
+ width: 50%;
+ height: 100vh;
 }
 
 #swords2{
@@ -63,7 +64,9 @@ progress::-webkit-progress-value {
     padding-top: 2%;
     display: flex;
     flex-direction: column;
-   }
+    width: 50%;
+    height: 100vh;
+}
 
 body{
     background-color: rgb(165, 207, 130);
@@ -92,14 +95,16 @@ body{
     padding-top: 88px;
 }
 
+
+
 #zombie{
     margin-top: 100px;
     margin-bottom: 20px;
-    width: 150px;
+    width: 250px;
     padding-left: 100px;
     margin-left: 150px;
-    max-width: 150px;
-    max-height: 250px;
+    /* max-width: 150px;
+    max-height: 250px; */
     
 }
 
@@ -111,7 +116,7 @@ body{
 /*-------- Sword Buttons --------*/
 
 .swords{
-    width: 250px;
+    width: 275px;
     font-size: 20px;
     border-radius: 10px;
     border-color: rgb(112, 59, 9);

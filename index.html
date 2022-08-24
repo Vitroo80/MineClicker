@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<div>  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +25,39 @@
     <div>
         <progress id=hpbar value="25" max="25"></progress>
         <p id="boss">1/5</p>
+        <div id="cursorButtons">
+            <div>
+                <button onclick="buyWoodCursor()" class="cursor" id="woodCursor"><img id="wood_Cursor" src="./Images/Wood_Cursor.png" alt="Wood_Cursor"><p>Wood Cursor</p></button>
+                <p><span>Price:</span><span id="woodCursorPrice">150</span></p>
+                <span>Inventory:</span><span id="woodCursorInv" class="cursorInfo">0</span>
+            </div> 
+            <div>
+                <button onclick="buyStoneCursor()" class="cursor" id="stoneCursor"><img id="stone_Cursor" src="./Images/Stone_Cursor.png" alt="Stone_Cursor"><p>Stone Cursor</p></button>
+                <p><span>Price:</span><span id="stoneCursorPrice">400</span></p>
+                <span>Inventory:</span><span id="stoneCursorInv" class="cursorInfo">0</span>
+            </div>
+            <div>
+                <button onclick="buyIronCursor()" class="cursor" id="ironCursor"><img id="iron_Cursor" src="./Images/iron_Cursor.png" alt="Iron_Cursor"><p>Iron Cursor</p></button>
+                <p><span>Price:</span><span id="ironCursorPrice">700</span></p>
+                <span>Inventory:</span><span id="ironCursorInv" class="cursorInfo">0</span>
+            </div>
+            <div>
+                <button onclick="buyGoldCursor()" class="cursor" id="goldCursor"><img id="gold_Cursor" src="./Images/Golden_Cursor.png" alt="Gold_Cursor"><p>Gold Cursor</p></button>
+                <p><span>Price:</span><span id="goldCursorPrice">1300</span></p>
+                <span>Inventory:</span><span id="goldCursorInv" class="cursorInfo">0</span>
+            </div> 
+            <div>
+                <button onclick="buyDiamondCursor()" class="cursor" id="diamondCursor"><img id="diamond_Cursor" src="./Images/Diamond_Cursor.png" alt="Diamond_Cursor"><p>Diamond Cursor</p></button>
+                <p><span>Price:</span><span id="diamondCursorPrice">2750</span></p>
+                <span>Inventory:</span><span id="diamondCursorInv" class="cursorInfo">0</span>
+            </div>
+            <div>
+                <button onclick="buyNetheriteCursor()" class="cursor" id="netheriteCursor"><img id="netherite_Cursor" src="./Images/Netherite_Cursor.png" alt="Netherite_Cursor"><p>Netherite Cursor</p></button>
+                <p><span>Price:</span><span id="netheriteCursorPrice">9500</span></p>
+                <span>Inventory:</span><span id="netheriteCursorInv" class="cursorInfo">0</span>
+            </div>    
+                   
+        </div>
     </div>
     </div>
     
@@ -65,39 +99,7 @@
     </div>
 </div>
 <!------------------ Cursor Upgrades ------------------>
-<div id="cursorButtons">
-    <div>
-        <button onclick="buyWoodCursor()" class="cursor" id="woodCursor"><img id="wood_Cursor" src="./Images/Wood_Cursor.png" alt="Wood_Cursor"><p>Wood Cursor</p></button>
-        <p><span>Price:</span><span id="woodCursorPrice">150</span></p>
-        <span>Inventory:</span><span id="woodCursorInv" class="cursorInfo">0</span>
-    </div> 
-    <div>
-        <button onclick="buyStoneCursor()" class="cursor" id="stoneCursor"><img id="stone_Cursor" src="./Images/Stone_Cursor.png" alt="Stone_Cursor"><p>Stone Cursor</p></button>
-        <p><span>Price:</span><span id="stoneCursorPrice">400</span></p>
-        <span>Inventory:</span><span id="stoneCursorInv" class="cursorInfo">0</span>
-    </div>
-    <div>
-        <button onclick="buyIronCursor()" class="cursor" id="ironCursor"><img id="iron_Cursor" src="./Images/iron_Cursor.png" alt="Iron_Cursor"><p>Iron Cursor</p></button>
-        <p><span>Price:</span><span id="ironCursorPrice">700</span></p>
-        <span>Inventory:</span><span id="ironCursorInv" class="cursorInfo">0</span>
-    </div>
-    <div>
-        <button onclick="buyGoldCursor()" class="cursor" id="goldCursor"><img id="gold_Cursor" src="./Images/Golden_Cursor.png" alt="Gold_Cursor"><p>Gold Cursor</p></button>
-        <p><span>Price:</span><span id="goldCursorPrice">1300</span></p>
-        <span>Inventory:</span><span id="goldCursorInv" class="cursorInfo">0</span>
-    </div> 
-    <div>
-        <button onclick="buyDiamondCursor()" class="cursor" id="diamondCursor"><img id="diamond_Cursor" src="./Images/Diamond_Cursor.png" alt="Diamond_Cursor"><p>Diamond Cursor</p></button>
-        <p><span>Price:</span><span id="diamondCursorPrice">2750</span></p>
-        <span>Inventory:</span><span id="diamondCursorInv" class="cursorInfo">0</span>
-    </div>
-    <div>
-        <button onclick="buyNetheriteCursor()" class="cursor" id="netheriteCursor"><img id="netherite_Cursor" src="./Images/Netherite_Cursor.png" alt="Netherite_Cursor"><p>Netherite Cursor</p></button>
-        <p><span>Price:</span><span id="netheriteCursorPrice">9500</span></p>
-        <span>Inventory:</span><span id="netheriteCursorInv" class="cursorInfo">0</span>
-    </div>    
-           
-</div>
+
 
 
     <script src="Index.js"></script>

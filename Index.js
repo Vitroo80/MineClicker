@@ -69,28 +69,28 @@ let dps = 0
 let image = document.querySelector("#zombie") 
 let nivel = 1
 let era = 1
-// let dpcursor = 1*woodCursorStock+stoneCursorStock*5+ironCursorStock*10+goldCursorStock*50+diamondCursorStock*500+netheriteCursorStock*5000
+let dpcursor
 
   // contador de diamante
 function addCount(){
     clicks=clicks+1  
     if(woodCursorStock>0){
-      clicks=clicks+woodCursorStock*3
+      clicks=clicks+woodCursorStock
     } 
     if(stoneCursorStock>0){
-      clicks=clicks+stoneCursorStock*10
+      clicks=clicks+stoneCursorStock*3
     }
     if(ironCursorStock>0){
-      clicks=clicks+ironCursorStock*20
+      clicks=clicks+ironCursorStock*8
     }
     if(goldCursorStock>0){
-      clicks=clicks+goldCursorStock*50
+      clicks=clicks+goldCursorStock*12
     }
     if(diamondCursorStock>0){
-      clicks=clicks+diamondCursorStock*125
+      clicks=clicks+diamondCursorStock*23
     }
     if(netheriteCursorStock>0){
-      clicks=clicks+netheriteCursorStock*500
+      clicks=clicks+netheriteCursorStock*35
     }
     count.innerText=clicks
     // console.log(clicks)
@@ -306,8 +306,27 @@ setInterval (function(){
 
 function incr() {
   let v1=document.getElementById('hpbar').value;
-  
-  document.getElementById("hpbar").value= v1 - 1;
+  let sum = 1
+  if (woodCursorStock>0){  
+    sum=woodCursorStock*3
+  }
+  if (stoneCursorStock>0){  
+    sum=stoneCursorStock*10
+  }
+  if (ironCursorStock>0){  
+    sum=ironCursorStock*20
+  }
+  if (goldCursorStock>0){  
+    sum=goldCursorStock*50
+  }
+  if (diamondCursorStock>0){  
+    sum=diamondCursorStock*125
+  }
+  if (netheriteCursorStock>0){  
+    sum=netheriteCursorStock*500
+  }
+  document.getElementById("hpbar").value= v1 - sum;
+
   if(v1<=0 && nivel==1){
     image.src="./Images/Zombie.png"
     document.getElementById("hpbar").max=50*era
@@ -548,7 +567,7 @@ function incr() {
     document.getElementById("hpbar").value=50000*era
     clicks=clicks+50000*era
     v1=50000*era
-    nivel=27
+    nivel=1
     stage.innerText= "5/5 FINAL BOSS"
   }
   }
