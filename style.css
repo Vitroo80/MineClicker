@@ -1,9 +1,9 @@
 p{
-    font-family: 'Minecraft', sans-serif;                                               
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif                                              
 }
 
 span{
-    font-family: 'Minecraft', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .enemy {
@@ -160,37 +160,44 @@ body{
 /* Cursor Upgrades */
 
 #wood_Cursor{
-    width: 75px;  
+    width: 75px; 
+    margin-top: 5px; 
 }
 
 #stone_Cursor{
     width: 75px;  
+    margin-top: 5px; 
 }
 
 #iron_Cursor{
-    width: 75px;  
+    width: 75px; 
+    
 }
 
 #gold_Cursor{
     width: 75px;  
+    margin-top: 5px; 
 }
 
 #diamond_Cursor{
-    width: 75px;  
+    width: 75px; 
+    margin-top: 5px;  
 }
 
 #netherite_Cursor{
     width: 75px;  
+    margin-top: 5px; 
 }
 
 .cursor{
     width: 200px;
+    height: 120px;
     font-size: 20px;
     border-radius: 10px;
     border-color: rgb(112, 59, 9);
     background-color: rgb(221, 231, 160);
     margin-top: 10px;
-    padding-top: 25px;
+    padding-top: 23px;
     display: flex;
 }
 

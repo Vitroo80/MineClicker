@@ -38,12 +38,12 @@ const netheriteCursorinv=document.querySelector("#netheriteCursorInv")
 const netheriteCursorPrice=document.querySelector("#netheriteCursorPrice")
 const dpscounter=document.querySelector("#dpscount")
 const stage=document.querySelector("#boss")
-
+const damage=document.querySelector("#walter")
 
 let clicks = 0
 let woodSwordCost = 50
 let woodStock = 0
-let stoneSwordCost = 200
+let stoneSwordCost = 200  
 let stoneStock = 0
 let ironSwordCost = 600
 let ironStock = 0
@@ -53,7 +53,7 @@ let diamondSwordCost = 2500
 let diamondStock = 0
 let netheriteSwordCost = 20000
 let netheriteStock = 0
-let woodCursorCost = 4000
+let woodCursorCost = 20
 let woodCursorStock = 0
 let stoneCursorCost = 10000
 let stoneCursorStock = 0
@@ -69,13 +69,15 @@ let dps = 0
 let image = document.querySelector("#zombie") 
 let nivel = 1
 let era = 1
-let dpcursor
+let dpcursor=0
+
 
   // contador de diamante
 function addCount(){
     clicks=clicks+1  
     if(woodCursorStock>0){
       clicks=clicks+woodCursorStock
+
     } 
     if(stoneCursorStock>0){
       clicks=clicks+stoneCursorStock*3
@@ -93,6 +95,7 @@ function addCount(){
       clicks=clicks+netheriteCursorStock*35
     }
     count.innerText=clicks
+    damage.innerText=dpcursor
     // console.log(clicks)
 }
 
@@ -273,32 +276,32 @@ function buyNetheriteCursor(){
 // Inventory
 
 setInterval (function(){
-  clicks = clicks+woodStock*1
+  clicks = clicks+woodStock
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+stoneStock*5
+  clicks = clicks+stoneStock*2
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+ironStock*20
+  clicks = clicks+ironStock*4
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+goldStock*50
+  clicks = clicks+goldStock*12
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+diamondStock*100
+  clicks = clicks+diamondStock*20
   count.innerText=clicks
 },1000)
 
 setInterval (function(){
-  clicks = clicks+netheriteStock*1000
+  clicks = clicks+netheriteStock*100
   count.innerText=clicks
 },1000)
 
@@ -308,22 +311,23 @@ function incr() {
   let v1=document.getElementById('hpbar').value;
   let sum = 1
   if (woodCursorStock>0){  
-    sum=woodCursorStock*3
+    sum=woodCursorStock*1
+    
   }
   if (stoneCursorStock>0){  
-    sum=stoneCursorStock*10
+    sum=stoneCursorStock*3
   }
   if (ironCursorStock>0){  
-    sum=ironCursorStock*20
+    sum=ironCursorStock*8
   }
   if (goldCursorStock>0){  
-    sum=goldCursorStock*50
+    sum=goldCursorStock*12
   }
   if (diamondCursorStock>0){  
-    sum=diamondCursorStock*125
+    sum=diamondCursorStock*23
   }
   if (netheriteCursorStock>0){  
-    sum=netheriteCursorStock*500
+    sum=netheriteCursorStock*35
   }
   document.getElementById("hpbar").value= v1 - sum;
 
@@ -567,9 +571,9 @@ function incr() {
     document.getElementById("hpbar").value=50000*era
     clicks=clicks+50000*era
     v1=50000*era
+    era=era+1
     nivel=1
     stage.innerText= "5/5 FINAL BOSS"
-    era=era+1
   }
   }
 
