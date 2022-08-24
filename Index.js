@@ -57,7 +57,7 @@ let woodCursorCost = 4000
 let woodCursorStock = 0
 let stoneCursorCost = 10000
 let stoneCursorStock = 0
-let ironCursorCost = 250000
+let ironCursorCost = 25000
 let ironCursorStock = 0
 let goldCursorCost = 40000
 let goldCursorStock = 0
@@ -569,6 +569,7 @@ function incr() {
     v1=50000*era
     nivel=1
     stage.innerText= "5/5 FINAL BOSS"
+    era=era+1
   }
   }
 
