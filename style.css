@@ -23,11 +23,26 @@ span{
     font-size: 35px;
 }
 
-#hpbar{
+
+progress {
+    display:block;
+    -webkit-appearance: none;
     width: 1000px;
-    height: 100px;
-    padding-left: 25px;
-    
+    height: 50px;
+}
+progress::-webkit-progress-bar {
+    background: black;
+    border-radius: 50px;
+    padding: 5px;
+}
+progress::-moz-progress-bar {  
+    background: black;
+    border-radius: 50px;
+    padding: 2px;
+}
+progress::-webkit-progress-value {
+    border-radius: 50px;
+    background:rgb(223, 14, 14);
 }
 
 #body{
@@ -52,6 +67,7 @@ span{
 
 body{
     background-color: rgb(165, 207, 130);
+    
 }
 
 
@@ -79,9 +95,11 @@ body{
 #zombie{
     margin-top: 100px;
     margin-bottom: 20px;
-    width: 350px;
+    width: 150px;
     padding-left: 100px;
     margin-left: 150px;
+    max-width: 150px;
+    max-height: 250px;
     
 }
 

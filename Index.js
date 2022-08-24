@@ -196,7 +196,7 @@ function buyWoodCursor(){
   if(clicks >= woodCursorCost){
     clicks = clicks - woodCursorCost
     woodCursorStock = woodCursorStock+1
-    woodCursorCost = Math.round(woodCursorCost*3)
+    woodCursorCost = Math.round(woodCursorCost*1.15)
     count.innerText=clicks-woodCursorStock
     woodCursorinv.innerText= woodCursorStock
     woodCursorPrice.innerText= woodCursorCost
@@ -209,7 +209,7 @@ function buyStoneCursor(){
   if(clicks >= stoneCursorCost){
     clicks = clicks - stoneCursorCost
     stoneCursorStock = stoneCursorStock+1
-    stoneCursorCost = Math.round(stoneCursorCost*3)
+    stoneCursorCost = Math.round(stoneCursorCost*1.15)
     count.innerText=clicks-stoneCursorStock
     stoneCursorinv.innerText= stoneCursorStock
     stoneCursorPrice.innerText= stoneCursorCost
@@ -222,7 +222,7 @@ function buyIronCursor(){
   if(clicks >= ironCursorCost){
     clicks = clicks - ironCursorCost
     ironCursorStock = ironCursorStock+1
-    ironCursorCost = Math.round(ironCursorCost*3)
+    ironCursorCost = Math.round(ironCursorCost*1.15)
     count.innerText=clicks-ironCursorStock
     ironCursorinv.innerText= ironCursorStock
     ironCursorPrice.innerText= ironCursorCost
@@ -235,7 +235,7 @@ function buyGoldCursor(){
   if(clicks >= goldCursorCost){
     clicks = clicks - goldCursorCost
     goldCursorStock = goldCursorStock+1
-    goldCursorCost = Math.round(goldCursorCost*3)
+    goldCursorCost = Math.round(goldCursorCost*1.15)
     count.innerText=clicks-goldCursorStock
     goldCursorinv.innerText= goldCursorStock
     goldCursorPrice.innerText= goldCursorCost
@@ -248,7 +248,7 @@ function buyDiamondCursor(){
   if(clicks >= diamondCursorCost){
     clicks = clicks - diamondCursorCost
     diamondCursorStock = diamondCursorStock+1
-    diamondCursorCost = Math.round(diamondCursorCost*3)
+    diamondCursorCost = Math.round(diamondCursorCost*1.15)
     count.innerText=clicks-diamondCursorStock
     diamondCursorinv.innerText= diamondCursorStock
     diamondCursorPrice.innerText= diamondCursorCost
@@ -261,7 +261,7 @@ function buyNetheriteCursor(){
   if(clicks >= netheriteCursorCost){
     clicks = clicks - netheriteCursorCost
     netheriteCursorStock = netheriteCursorStock+1
-    netheriteCursorCost = Math.round(netheriteCursorCost*3)
+    netheriteCursorCost = Math.round(netheriteCursorCost*1.15)
     count.innerText=clicks-netheriteCursorStock
     netheriteCursorinv.innerText= netheriteCursorStock
     netheriteCursorPrice.innerText= netheriteCursorCost
