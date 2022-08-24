@@ -85,6 +85,11 @@ body{
     
 }
 
+#boss{
+    font-size: 30px;
+    padding-left: 450px;
+}
+
 /*-------- Sword Buttons --------*/
 
 .swords{

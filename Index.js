@@ -37,7 +37,7 @@ const buynetheriteC=document.querySelector("#netheriteCursor")
 const netheriteCursorinv=document.querySelector("#netheriteCursorInv")
 const netheriteCursorPrice=document.querySelector("#netheriteCursorPrice")
 const dpscounter=document.querySelector("#dpscount")
-
+const stage=document.querySelector("#boss")
 
 let clicks = 0
 let woodSwordCost = 10
@@ -64,13 +64,13 @@ let diamondCursorCost = 15000000
 let diamondCursorStock = 0
 let netheriteCursorCost = 150000000
 let netheriteCursorStock = 0
-let dps =0
+let dps = 0
+let image = document.querySelector("#zombie") 
+let nivel=1
+let era = 1
+// let dpcursor = 1*woodCursorStock+stoneCursorStock*5+ironCursorStock*10+goldCursorStock*50+diamondCursorStock*500+netheriteCursorStock*5000
 
-// function dpscount(){
-//   dps = woodStock+stoneStock*10+ironStock*100+goldStock*1000+diamondStock+10000+netheriteStock*100000
-//   console.log(dps)
-// }
-
+  // contador de diamante
 function addCount(){
     clicks=clicks+1  
     if(woodCursorStock>0){
@@ -301,7 +301,256 @@ setInterval (function(){
   count.innerText=clicks
 },1000)
 
+// stages
 
+function incr() {
+  let v1=document.getElementById('hpbar').value;
+  
+  document.getElementById("hpbar").value= v1 - 1;
+  if(v1<=0 && nivel==1){
+    image.src="./Images/Zombie.png"
+    document.getElementById("hpbar").max=50*era
+    document.getElementById("hpbar").value=50*era
+    clicks=clicks+15*era
+    v1=50*era
+    nivel=2
+    stage.innerText= "2/5"
+  }
+  if(v1<=0 && nivel==2){
+    image.src="./Images/Skeleton.png"
+    document.getElementById("hpbar").max=100*era
+    document.getElementById("hpbar").value=100*era
+    clicks=clicks+25*era
+    v1=100*era
+    nivel=3
+    stage.innerText= "3/5"
+  }
+  if(v1<=0 && nivel==3){
+    image.src="./Images/Spider.png"
+    document.getElementById("hpbar").max=150*era
+    document.getElementById("hpbar").value=150*era
+    clicks=clicks+50*era
+    v1=200*era
+    nivel=4
+    stage.innerText= "4/5"
+  }
+  if(v1<=0 && nivel==4){
+    image.src="./Images/Skeleton_Horseman.png"
+    document.getElementById("hpbar").max=500*era
+    document.getElementById("hpbar").value=500*era
+    clicks=clicks+250*era
+    v1=500*era
+    nivel=5
+    stage.innerText= "5/5 BOSS"
+  }
+  if(v1<=0 && nivel==5){
+    image.src="./Images/Creeper.png"
+    document.getElementById("hpbar").max=175*era
+    document.getElementById("hpbar").value=175*era
+    clicks=clicks+75*era
+    v1=175*era
+    nivel=6
+    stage.innerText= "1/6"
+  }
+  if(v1<=0 && nivel==6){
+    image.src="./Images/Slime.png"
+    document.getElementById("hpbar").max=200*era
+    document.getElementById("hpbar").value=200*era
+    clicks=clicks+100*era
+    v1=200*era
+    nivel=7
+    stage.innerText= "2/6"
+  }
+  if(v1<=0 && nivel==7){
+    image.src="./Images/Enderman.png"
+    document.getElementById("hpbar").max=225*era
+    document.getElementById("hpbar").value=225*era
+    clicks=clicks+125*era
+    v1=225*era
+    nivel=8
+    stage.innerText= "3/6"
+  }
+  if(v1<=0 && nivel==8){
+    image.src="./Images/Drowned.png"
+    document.getElementById("hpbar").max=250*era
+    document.getElementById("hpbar").value=250*era
+    clicks=clicks+175*era
+    v1=250*era
+    nivel=9
+    stage.innerText= "4/6"
+  }
+  if(v1<=0 && nivel==9){
+    image.src="./Images/Guardian.png"
+    document.getElementById("hpbar").max=300*era
+    document.getElementById("hpbar").value=300*era
+    clicks=clicks+225*era
+    v1=300*era
+    nivel=10
+    stage.innerText= "5/6"
+  }
+  if(v1<=0 && nivel==10){
+    image.src="./Images/Elder_Guardian.png"
+    document.getElementById("hpbar").max=750*era
+    document.getElementById("hpbar").value=750*era
+    clicks=clicks+500*era
+    v1=750*era
+    nivel=11
+    stage.innerText= "6/6 BOSS"
+  }
+  if(v1<=0 && nivel==11){
+    image.src="./Images/Pillager.png"
+    document.getElementById("hpbar").max=350*era
+    document.getElementById("hpbar").value=350*era
+    clicks=clicks+275*era
+    v1=350*era
+    nivel=12
+    stage.innerText= "1/5"
+  }
+  if(v1<=0 && nivel==12){
+    image.src="./Images/Vex.png"
+    document.getElementById("hpbar").max=400*era
+    document.getElementById("hpbar").value=400*era
+    clicks=clicks+300*era
+    v1=400*era
+    nivel=13
+    stage.innerText= "2/5"
+  }
+  if(v1<=0 && nivel==13){
+    image.src="./Images/Witch.png"
+    document.getElementById("hpbar").max=450*era
+    document.getElementById("hpbar").value=450*era
+    clicks=clicks+350*era
+    v1=450*era
+    nivel=14
+    stage.innerText= "3/5"
+  }
+  if(v1<=0 && nivel==14){
+    image.src="./Images/Evoker.png"
+    document.getElementById("hpbar").max=500*era
+    document.getElementById("hpbar").value=500*era
+    clicks=clicks+400*era
+    v1=500*era
+    nivel=15
+    stage.innerText= "4/5"
+  }
+  if(v1<=0 && nivel==15){
+    image.src="./Images/Devastador.png"
+    document.getElementById("hpbar").max=1000*era
+    document.getElementById("hpbar").value=1000*era
+    clicks=clicks+1000*era
+    v1=1000*era
+    nivel=16
+    stage.innerText= "5/5 BOSS"
+  }
+  if(v1<=0 && nivel==16){
+    image.src="./Images/Zombified_Piglin.png"
+    document.getElementById("hpbar").max=600*era
+    document.getElementById("hpbar").value=600*era
+    clicks=clicks+500*era
+    v1=600*era
+    nivel=17
+    stage.innerText= "1/8"
+  }
+  if(v1<=0 && nivel==17){
+    image.src="./Images/Hoglin.png"
+    document.getElementById("hpbar").max=650*era
+    document.getElementById("hpbar").value=650*era
+    clicks=clicks+600*era
+    v1=650*era
+    nivel=18
+    stage.innerText= "2/8"
+  }
+  if(v1<=0 && nivel==18){
+    image.src="./Images/Blaze.png"
+    document.getElementById("hpbar").max=700*era
+    document.getElementById("hpbar").value=700*era
+    clicks=clicks+700*era
+    v1=700*era
+    nivel=19
+    stage.innerText= "3/8"
+  }
+  if(v1<=0 && nivel==19){
+    image.src="./Images/Magma_Cube.png"
+    document.getElementById("hpbar").max=800*era
+    document.getElementById("hpbar").value=800*era
+    clicks=clicks+800*era
+    v1=800*era
+    nivel=20
+    stage.innerText= "4/8"
+  }
+  if(v1<=0 && nivel==20){
+    image.src="./Images/Ghast.png"
+    document.getElementById("hpbar").max=900*era
+    document.getElementById("hpbar").value=900*era
+    clicks=clicks+900*era
+    v1=900*era
+    nivel=21
+    stage.innerText= "5/8"
+  }
+  if(v1<=0 && nivel==21){
+    image.src="./Images/Piglin_Brute.png"
+    document.getElementById("hpbar").max=1000*era
+    document.getElementById("hpbar").value=1000*era
+    clicks=clicks+1000*era
+    v1=1000*era
+    nivel=22
+    stage.innerText= "6/8"
+  }
+  if(v1<=0 && nivel==22){
+    image.src="./Images/Ender_Dragon.png"
+    document.getElementById("hpbar").max=3000*era
+    document.getElementById("hpbar").value=3000*era
+    clicks=clicks+5000*era
+    v1=5000*era
+    nivel=23
+    stage.innerText= "8/8 BOSS"
+  }
+  if(v1<=0 && nivel==23){
+    image.src="./Images/Shulker.png"
+    document.getElementById("hpbar").max=1250*era
+    document.getElementById("hpbar").value=1250*era
+    clicks=clicks+1250*era
+    v1=1250*era
+    nivel=24
+    stage.innerText= "1/5"
+  }
+  if(v1<=0 && nivel==24){
+    image.src="./Images/Wither_Skeleton.png"
+    document.getElementById("hpbar").max=1500*era
+    document.getElementById("hpbar").value=1500*era
+    clicks=clicks+1500*era
+    v1=1500*era
+    nivel=25
+    stage.innerText= "2/5"
+  }
+  if(v1<=0 && nivel==25){
+    image.src="./Images/Wither.png"
+    document.getElementById("hpbar").max=5000*era
+    document.getElementById("hpbar").value=5000*era
+    clicks=clicks+5000*era
+    v1=5000*era
+    nivel=26
+    stage.innerText= "3/5 BOSS"
+  }
+  if(v1<=0 && nivel==26){
+    image.src="./Images/Wither_Skeleton.png"
+    document.getElementById("hpbar").max=10000*era
+    document.getElementById("hpbar").value=10000*era
+    clicks=clicks+10000*era
+    v1=10000*era
+    nivel=27
+    stage.innerText= "4/5 BOSS"
+  }
+  if(v1<=0 && nivel==27){
+    image.src="./Images/herobrine.png"
+    document.getElementById("hpbar").max=50000*era
+    document.getElementById("hpbar").value=50000*era
+    clicks=clicks+50000*era
+    v1=50000*era
+    nivel=27
+    stage.innerText= "5/5 FINAL BOSS"
+  }
+  }
 
 
 

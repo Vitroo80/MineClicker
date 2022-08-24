@@ -15,15 +15,19 @@
 <body>
     <div id="body">
     <div class="layout">
-        <div><img id="zombie" src="./Images/Blaze.png" alt="zombie"/></div> 
+        <div><img id="zombie" src="./Images/Silverfish.png" alt="zombie" onClick='incr();' /></div> 
         <div id="countDisplay"><div><img id="diamondimg" src="./Images/Diamond.png"/></div>
         
             <div id="diamonds_count"><p>Diamonds:<span id="count">0</span></p></div></div>
             <div id="dpsmark"><p>D.P.S: <span id="dpscount">0</span></p></div>
         
-    <!-- <div><progress id=hpbar value="100" max="100"></progress></div> -->
+    <div>
+        <progress id=hpbar value="25" max="25"></progress>
+        <p id="boss">1/5</p>
+    </div>
     </div>
     
+
 <!-- ------------------ Swords -------------------->
     <div id="swords1" class="layout">
         <div>
