@@ -224,7 +224,7 @@ body{
 }
 
 #ironCursor{
-    width: 50px;
+    width: px;
     object-fit: contain;
     
 }
