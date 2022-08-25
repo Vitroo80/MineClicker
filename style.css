@@ -223,8 +223,8 @@ body{
     margin-top: 5px; 
 }
 
-#ironCursor{
-    width: px;
+#iron_Cursor{
+    width: 50px;
     object-fit: contain;
     
 }
@@ -246,6 +246,7 @@ body{
     object-fit: contain;  
     margin-top: 5px; 
 }
+
 
 .cursor{
     width: 120px;
