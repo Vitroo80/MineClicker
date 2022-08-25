@@ -9,4 +9,4 @@ Para saber mais, veja a apresentação.
 
 Para jogar, [clique aqui](https://vitroo80.github.io/MineClicker/).
 
-![Preview](https://user-images.githubusercontent.com/110558791/186602966-333883b4-31b0-48f9-97a9-7358738e9183.png)
+![Preview](https://user-images.githubusercontent.com/110558791/186686277-adf1ed05-bb39-486f-90f1-4b239b96c25e.png)
