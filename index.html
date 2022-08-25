@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<div>  
+<div> 
+    <div id="full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MineClicker</title>
     <link rel="stylesheet" href="./style.css"/>
-    <center><img src="./Images/Mine_Clicker_Logo_Sem_Fundo.png"/></center>
+    <center><img id="clickerlogo" src="./Images/Mine_Clicker_Logo_Sem_Fundo.png"/></center>
     <style>@import url('http://fonts.cdnfonts.com/css/minecraft-4');</style>
     <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
 
@@ -21,7 +22,6 @@
         
             <div id="diamonds_count"><p>EMERALDS:   <span id="count">0</span></p></div></div>
             <div id="dpsmark"><p>E.P.S: <span id="dpscount">0</span></p></div>
-            <!-- <div><p>Damage: <span id="walter">0</span></p></div> -->
         
     <div>
         <progress id=hpbar value="25" max="25"></progress>
@@ -117,5 +117,6 @@
 
     <script src="Index.js"></script>
 </body>
+</div> 
 </html>
 

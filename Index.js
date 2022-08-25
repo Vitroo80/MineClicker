@@ -342,10 +342,10 @@ function incr() {
 
   if(v1<=0 && nivel==1){
     image.src="./Images/Zombie.png"
-    document.getElementById("hpbar").max=50*era
-    document.getElementById("hpbar").value=50*era
+    document.getElementById("hpbar").max=100*era
+    document.getElementById("hpbar").value=100*era
     clicks=clicks+15*era
-    v1=50*era
+    v1=100*era
     nivel=2
     stage.innerText= "2/5"
   }
@@ -378,46 +378,46 @@ function incr() {
   }
   if(v1<=0 && nivel==5){
     image.src="./Images/Creeper.png"
-    document.getElementById("hpbar").max=175*era
-    document.getElementById("hpbar").value=175*era
+    document.getElementById("hpbar").max=200*era
+    document.getElementById("hpbar").value=200*era
     clicks=clicks+75*era
-    v1=175*era
+    v1=200*era
     nivel=6
     stage.innerText= "1/6"
   }
   if(v1<=0 && nivel==6){
     image.src="./Images/Slime.png"
-    document.getElementById("hpbar").max=200*era
-    document.getElementById("hpbar").value=200*era
+    document.getElementById("hpbar").max=250*era
+    document.getElementById("hpbar").value=250*era
     clicks=clicks+100*era
-    v1=200*era
+    v1=250*era
     nivel=7
     stage.innerText= "2/6"
   }
   if(v1<=0 && nivel==7){
     image.src="./Images/Enderman.png"
-    document.getElementById("hpbar").max=225*era
-    document.getElementById("hpbar").value=225*era
+    document.getElementById("hpbar").max=275*era
+    document.getElementById("hpbar").value=275*era
     clicks=clicks+125*era
-    v1=225*era
+    v1=275*era
     nivel=8
     stage.innerText= "3/6"
   }
   if(v1<=0 && nivel==8){
     image.src="./Images/Drowned.png"
-    document.getElementById("hpbar").max=250*era
-    document.getElementById("hpbar").value=250*era
+    document.getElementById("hpbar").max=325*era
+    document.getElementById("hpbar").value=325*era
     clicks=clicks+175*era
-    v1=250*era
+    v1=325*era
     nivel=9
     stage.innerText= "4/6"
   }
   if(v1<=0 && nivel==9){
     image.src="./Images/Guardian.png"
-    document.getElementById("hpbar").max=300*era
-    document.getElementById("hpbar").value=300*era
+    document.getElementById("hpbar").max=375*era
+    document.getElementById("hpbar").value=375*era
     clicks=clicks+225*era
-    v1=300*era
+    v1=375*era
     nivel=10
     stage.innerText= "5/6"
   }
@@ -432,19 +432,19 @@ function incr() {
   }
   if(v1<=0 && nivel==11){
     image.src="./Images/Pillager.png"
-    document.getElementById("hpbar").max=350*era
-    document.getElementById("hpbar").value=350*era
+    document.getElementById("hpbar").max=400*era
+    document.getElementById("hpbar").value=400*era
     clicks=clicks+275*era
-    v1=350*era
+    v1=400*era
     nivel=12
     stage.innerText= "1/5"
   }
   if(v1<=0 && nivel==12){
     image.src="./Images/Vex.png"
-    document.getElementById("hpbar").max=400*era
-    document.getElementById("hpbar").value=400*era
+    document.getElementById("hpbar").max=425*era
+    document.getElementById("hpbar").value=425*era
     clicks=clicks+300*era
-    v1=400*era
+    v1=425*era
     nivel=13
     stage.innerText= "2/5"
   }
@@ -482,7 +482,7 @@ function incr() {
     clicks=clicks+500*era
     v1=600*era
     nivel=17
-    stage.innerText= "1/8"
+    stage.innerText= "1/7"
   }
   if(v1<=0 && nivel==17){
     image.src="./Images/Hoglin.png"
@@ -491,7 +491,7 @@ function incr() {
     clicks=clicks+600*era
     v1=650*era
     nivel=18
-    stage.innerText= "2/8"
+    stage.innerText= "2/7"
   }
   if(v1<=0 && nivel==18){
     image.src="./Images/Blaze.png"
@@ -500,7 +500,7 @@ function incr() {
     clicks=clicks+700*era
     v1=700*era
     nivel=19
-    stage.innerText= "3/8"
+    stage.innerText= "3/7"
   }
   if(v1<=0 && nivel==19){
     image.src="./Images/Magma_Cube.png"
@@ -509,7 +509,7 @@ function incr() {
     clicks=clicks+800*era
     v1=800*era
     nivel=20
-    stage.innerText= "4/8"
+    stage.innerText= "4/7"
   }
   if(v1<=0 && nivel==20){
     image.src="./Images/Ghast.png"
@@ -518,7 +518,7 @@ function incr() {
     clicks=clicks+900*era
     v1=900*era
     nivel=21
-    stage.innerText= "5/8"
+    stage.innerText= "5/7"
   }
   if(v1<=0 && nivel==21){
     image.src="./Images/Piglin_Brute.png"
@@ -527,7 +527,7 @@ function incr() {
     clicks=clicks+1000*era
     v1=1000*era
     nivel=22
-    stage.innerText= "6/8"
+    stage.innerText= "6/7"
   }
   if(v1<=0 && nivel==22){
     image.src="./Images/Ender_Dragon.png"
@@ -536,7 +536,7 @@ function incr() {
     clicks=clicks+5000*era
     v1=5000*era
     nivel=23
-    stage.innerText= "8/8 BOSS"
+    stage.innerText= "7/7 BOSS"
   }
   if(v1<=0 && nivel==23){
     image.src="./Images/Shulker.png"

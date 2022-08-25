@@ -1,16 +1,17 @@
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(104, 18, 2);                                              
+    color: rgb(104, 18, 2);  
+    font-size: 15px;                                            
 }
 
 span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(2, 56, 31);
+    
 }
 
-.enemy {
-    margin: 25px;
-    ;
+#clickerlogo{
+    height: 75px;
 }
 
 .layout{
@@ -21,16 +22,16 @@ span{
 
 
 #dpsmark{
-    /* padding-left: 550px; */
-    font-size: 35px;
+    
+    font-size: 20px;
 }
 
 
 progress {
     display:block;
     -webkit-appearance: none;
-    width: 1000px;
-    height: 50px;
+    width: 700px;
+    height: 30px;
 }
 progress::-webkit-progress-bar {
     background: black;
@@ -53,12 +54,12 @@ progress::-webkit-progress-value {
 }
 
 #swords1{
- margin: 50px;
- padding-left: 10% ;
- padding-top: 2%;
- display: flex;
- width: 50%;
- height: 100vh;
+    margin: 50px;
+    padding-left: 10% ;
+    padding-top: 2%;
+    display: flex;
+    width: 50%;
+    height: 100vh;
 }
 
 #swords2{
@@ -71,8 +72,15 @@ progress::-webkit-progress-value {
 }
 
 body{
-    background-color: rgb(165, 207, 130);
     
+    background-image: url(./Images/background.png);
+    
+    
+}
+
+#full{
+    max-width: 1920px;
+    margin-right: 1080px;
 }
 
 #dpscount{
@@ -84,7 +92,7 @@ body{
 }
 
 #diamonds_count{
-    font-size: 50px;
+    font-size: 20px;
     padding-left: 100px;
     padding-bottom: 50px;
     padding-top: 60px;
@@ -99,110 +107,125 @@ body{
 }
 
 #diamondimg{
-    width: 100px;
-    padding-top: 88px;
+    width: 50px;
+    padding-top: 60px;
 }
 
 .pricetext{
     color: rgb(104, 18, 2);
+    font-size: 15px ;
 }
 
 #zombie{
-    margin-top: 100px;
-    margin-bottom: 20px;
-    width: 250px;
-    padding-left: 100px;
-    margin-left: 150px;
-    /* max-width: 150px;
-    max-height: 250px; */
+   
+    
+    width:  250px;
+    height: 250px;
+    object-fit: contain;
+    padding-left: 10%;
     
 }
 
 #boss{
-    font-size: 30px;
-    padding-left: 450px;
+    font-size: 15px;
+    padding-left: 310px;
 }
 
 /*-------- Sword Buttons --------*/
 
 .swords{
-    width: 275px;
+    width: 175px;
+    height: 125px;
     font-size: 20px;
     border-radius: 10px;
     border-color: rgb(112, 59, 9);
     background-color: rgb(221, 231, 160);
-    margin-top: 10px;
+    
     
 }
 
+
+
 #woodimg{
-    width: 100px;
+    width: 50px;
+    object-fit: contain;
     padding-top: 25px;
 }
 
 #stoneimg{
-    width: 100px;
+    width: 50px;
     padding-top: 25px;
+    object-fit: contain;
 }
 
 #ironimg{
-    width: 100px;
+    width: 50px;
+    object-fit: contain;
     padding-top: 25px;
 }
 
 
 #goldimg{
-    width: 100px;
+    width: 50px;
+    object-fit: contain;
     padding-top: 25px;
 }
 
 
 #sdiamondimg{
-    width: 100px;
+    width: 50px;
+    object-fit: contain;
     padding-top: 25px;
 }
 
 #netheriteimg{
-    width: 100px;
+    width: 50px;
+    object-fit: contain;
     padding-top: 25px;
 }
 
 /* Cursor Upgrades */
 
 #wood_Cursor{
-    width: 75px; 
+    width: 50px;
+    object-fit: contain;
     margin-top: 5px; 
 }
 
 #stone_Cursor{
-    width: 75px;  
+    width: 50px;
+    object-fit: contain; 
     margin-top: 5px; 
 }
 
 #iron_Cursor{
-    width: 75px; 
+    width: 50px;
+    object-fit: contain;
     
 }
 
 #gold_Cursor{
-    width: 75px;  
+    width: 50px;
+    object-fit: contain;  
     margin-top: 5px; 
 }
 
 #diamond_Cursor{
-    width: 75px; 
+    width: 50px;
+    object-fit: contain;
     margin-top: 5px;  
 }
 
 #netherite_Cursor{
-    width: 75px;  
+    width: 50px;
+    object-fit: contain;  
     margin-top: 5px; 
 }
 
 .cursor{
-    width: 200px;
-    height: 120px;
-    font-size: 20px;
+    width: 120px;
+    height: 100px;
+    font-size: 15px;
     border-radius: 10px;
     border-color: rgb(112, 59, 9);
     background-color: rgb(221, 231, 160);
