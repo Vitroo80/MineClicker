@@ -40,10 +40,10 @@ const dpscounter=document.querySelector("#dpscount")
 const stage=document.querySelector("#boss")
 const damage=document.querySelector("#walter")
 const music = new Audio('./Images/minecraftSong.wav');
-music.play();
-music.loop =true;
-
-
+function music(){
+  music.play();
+  music.loop = true;
+}
 
 let clicks = 0
 let woodSwordCost = 50
@@ -587,13 +587,15 @@ function incr() {
   }
   }
 
-
-
-img.addEventListener("click",()=> addCount())
-buyWoodS.addEventListener("click",()=> buyWood())
-buyStoneS.addEventListener("click",()=> buyStone())
-buyIronS.addEventListener("click",()=> buyIron())
-buyGoldS.addEventListener("click",()=> buyGold())
-buyDiamondS.addEventListener("click",()=> buyDiamond())
-buyNetheriteS.addEventListener("click",()=> buyNetherite())
-
+  
+  
+  
+  img.addEventListener("click",()=> addCount())
+  buyWoodS.addEventListener("click",()=> buyWood())
+  buyStoneS.addEventListener("click",()=> buyStone())
+  buyIronS.addEventListener("click",()=> buyIron())
+  buyGoldS.addEventListener("click",()=> buyGold())
+  buyDiamondS.addEventListener("click",()=> buyDiamond())
+  buyNetheriteS.addEventListener("click",()=> buyNetherite())
+  
+ 
