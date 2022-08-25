@@ -39,6 +39,11 @@ const netheriteCursorPrice=document.querySelector("#netheriteCursorPrice")
 const dpscounter=document.querySelector("#dpscount")
 const stage=document.querySelector("#boss")
 const damage=document.querySelector("#walter")
+const music = new Audio('./Images/minecraftSong.wav');
+music.play();
+music.loop =true;
+
+
 
 let clicks = 0
 let woodSwordCost = 50
