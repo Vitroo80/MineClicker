@@ -104,13 +104,6 @@ function addCount(){
     // console.log(clicks)
 }
 
-function tuaMae(){
-  if(woodCursorStock>0){
-    damage.innerText=dpcursor
-    dpcursor=woodCursorStock
-
-  }
-}
 
 
 // Swords
@@ -352,6 +345,7 @@ function incr() {
     clicks=clicks+15*era
     v1=100*era
     nivel=2
+    
     stage.innerText= "2/5"
   }
   if(v1<=0 && nivel==2){
@@ -386,7 +380,7 @@ function incr() {
     document.getElementById("hpbar").max=200*era
     document.getElementById("hpbar").value=200*era
     clicks=clicks+75*era
-    v1=200*era
+    v1=225*era
     nivel=6
     stage.innerText= "1/6"
   }
@@ -431,7 +425,7 @@ function incr() {
     document.getElementById("hpbar").max=750*era
     document.getElementById("hpbar").value=750*era
     clicks=clicks+500*era
-    v1=750*era
+    v1=1500*era
     nivel=11
     stage.innerText= "6/6 BOSS"
   }
@@ -584,6 +578,8 @@ function incr() {
     document.getElementById("hpbar").max=50000*era
     document.getElementById("hpbar").value=50000*era
     clicks=clicks+50000*era
+    netheriteStock = netheriteStock+1
+    netheriteinv.innerText= netheriteStock
     v1=50000*era
     era=era+1
     nivel=1
