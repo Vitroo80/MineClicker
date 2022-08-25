@@ -12,6 +12,7 @@ span{
 
 #clickerlogo{
     height: 75px;
+    padding-left: 25%;
 }
 
 .layout{
@@ -20,6 +21,10 @@ span{
       
 }
 
+/* #bloco1{
+    display: flex;
+    flex-direction: column;
+} */
 
 #dpsmark{
     
@@ -30,7 +35,7 @@ span{
 progress {
     display:block;
     -webkit-appearance: none;
-    width: 700px;
+    width: 80%;
     height: 30px;
 }
 progress::-webkit-progress-bar {
@@ -59,7 +64,7 @@ progress::-webkit-progress-value {
     padding-top: 2%;
     display: flex;
     width: 50%;
-    height: 100vh;
+    height: 50%;
 }
 
 #swords2{
@@ -68,7 +73,7 @@ progress::-webkit-progress-value {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100vh;
+    height: 50%;
 }
 
 body{
@@ -92,10 +97,8 @@ body{
 }
 
 #diamonds_count{
-    font-size: 20px;
-    padding-left: 100px;
     padding-bottom: 50px;
-    padding-top: 60px;
+    padding-top: 2%;
     
 }
 
@@ -108,7 +111,7 @@ body{
 
 #diamondimg{
     width: 50px;
-    padding-top: 60px;
+    padding-top: 25%;
 }
 
 .pricetext{
@@ -119,8 +122,9 @@ body{
 #zombie{
    
     
-    width:  250px;
+    width: 250px;
     height: 250px;
+    padding-top: 5%;
     object-fit: contain;
     padding-left: 10%;
     
@@ -143,7 +147,6 @@ body{
     
     
 }
-
 
 
 #woodimg{
@@ -236,5 +239,5 @@ body{
 
 #cursorButtons{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
 }

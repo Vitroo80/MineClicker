@@ -353,7 +353,7 @@ function incr() {
     image.src="./Images/Skeleton.png"
     document.getElementById("hpbar").max=100*era
     document.getElementById("hpbar").value=100*era
-    clicks=clicks+25*era
+    clicks=clicks+20*era
     v1=100*era
     nivel=3
     stage.innerText= "3/5"
