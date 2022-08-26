@@ -40,6 +40,7 @@ const dpscounter=document.querySelector("#dpscount")
 const stage=document.querySelector("#boss")
 const damage=document.querySelector("#walter")
 
+
 let clicks = 0
 let woodSwordCost = 50
 let woodStock = 0

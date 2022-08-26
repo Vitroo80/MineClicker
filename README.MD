@@ -5,7 +5,7 @@
 Esse jogo foi feito durante a primeira semana do bootcamp da IronHack WebDev São Paulo - Turma Agosto 82. 
 MineClicker é um IdleGame de Minecraft.
 
-Para saber mais, veja a apresentação.
+Para saber mais, veja a [apresentação](https://docs.google.com/presentation/d/13eF804uy-1_ExFtRd-W9OHcfNv_SNZzL0tJ2rZALcTA/edit?usp=sharing).
 
 Para jogar, [clique aqui](https://vitroo80.github.io/MineClicker/).
 
