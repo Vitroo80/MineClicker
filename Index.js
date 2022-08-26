@@ -560,7 +560,7 @@ function incr() {
     stage.innerText= "3/5 BOSS"
   }
   if(v1<=0 && nivel==26){
-    image.src="./Images/Wither_Skeleton.png"
+    image.src="./Images/Warden.png"
     document.getElementById("hpbar").max=10000*era
     document.getElementById("hpbar").value=10000*era
     clicks=clicks+10000*era
@@ -572,9 +572,9 @@ function incr() {
     image.src="./Images/herobrine.png"
     document.getElementById("hpbar").max=50000*era
     document.getElementById("hpbar").value=50000*era
-    clicks=clicks+50000*era
     netheriteStock = netheriteStock+1
     netheriteinv.innerText= netheriteStock
+    clicks=clicks+50000*era
     v1=50000*era
     era=era+1
     nivel=1
@@ -582,9 +582,7 @@ function incr() {
   }
   }
 
-  
-  
-  
+
   img.addEventListener("click",()=> addCount())
   buyWoodS.addEventListener("click",()=> buyWood())
   buyStoneS.addEventListener("click",()=> buyStone())
